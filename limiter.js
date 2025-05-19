@@ -4,7 +4,7 @@ const { getConfig } = require("./configStore");
 
 // Create Redis client
 const redisClient = Redis.createClient({
-  url: "redis://localhost:6379", // Update if using cloud Redis
+  url: process.env.REDIS_URL//"redis://localhost:6379", // Update if using cloud Redis
 });
 redisClient.on("error", (err) => console.error("Redis error:", err));
 redisClient.on("connect", () => {

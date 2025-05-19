@@ -4,6 +4,7 @@
   "description": "A rate limiter that restricts requests per IP using Redis for persistence and scalability.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

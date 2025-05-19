@@ -9,9 +9,10 @@ A rate limiter that restricts requests per IP using Redis for persistence and sc
 - rate-limiter-flexible
 
 ## 🚀 Features
-- Limits 100 requests per IP every 15 minutes
+- Limits 100 requests per IP every 15 minutes - default endpoint 
 - Blocks IP for 15 minutes if exceeded
-- Centralized rate limit store via Redis
+- Rate limit store via Redis
+- Provides possiblity to update limits - endpoint - /admin/update-rate-limit
 
 ## 📦 Installation
 
